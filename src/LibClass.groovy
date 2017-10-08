@@ -8,5 +8,6 @@ class LibClass {
     public void log() {
         def logger = LoggerFactory.getLogger("myLogger")
         logger.info("AAAAAAAAAAAAAAAAAAAAAAAAAAA")
+        echo "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
     }
 }
