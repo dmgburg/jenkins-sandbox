@@ -1,13 +1,11 @@
+import org.apache.commons.math3.primes.Primes
 import org.slf4j.LoggerFactory
 
-@Grapes([
-        @Grab(group='ch.qos.logback', module='logback-classic', version='1.2.3'),
-        @Grab(group='org.slf4j', module='slf4j-api', version='1.7.25')
-])
+@Grapes(
+        @Grab(group='org.apache.commons', module='commons-math3', version='3.2')
+)
 class LibClass {
-    public void log() {
-        def logger = LoggerFactory.getLogger("myLogger")
-        logger.info("AAAAAAAAAAAAAAAAAAAAAAAAAAA")
-        echo "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    public boolean isPrime(int number) {
+        return Primes.isPrime(number)
     }
 }

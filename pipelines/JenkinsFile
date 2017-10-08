@@ -1,5 +1,5 @@
 @Library("lib")
 
-import org.slf4j.LoggerFactory
-
-new LibClass().log()
+echo(new LibClass().isPrime(2).toString())
+echo(new LibClass().isPrime(3).toString())
+echo(new LibClass().isPrime(4).toString())
